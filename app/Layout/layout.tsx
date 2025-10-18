@@ -1,11 +1,12 @@
 import { Outlet } from "react-router";
+import Navber from "~/components/shared/navber";
 
 
 export default function layout() {
   return (
     <>
-      <h1>Header</h1>
-      <Outlet/>
+      <Navber />
+      <Outlet />
       <h2> Footer</h2>
     </>
   );
