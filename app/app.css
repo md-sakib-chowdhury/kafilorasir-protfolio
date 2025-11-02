@@ -15,32 +15,3 @@ body {
   }
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes marquee-reverse {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.animate-marquee {
-  display: inline-flex;
-  animation: marquee 15s linear infinite;
-}
-
-.animate-marquee-reverse {
-  display: inline-flex;
-  animation: marquee-reverse 15s linear infinite;
-}
