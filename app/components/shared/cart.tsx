@@ -1,108 +1,84 @@
-import bg from "../shared/bg.jpeg";
-import lpimg from "../shared/lpimg.png";
-import lpimg2 from "../shared/lpimg2.png";
-import { useState } from "react";
-
-export default function Cart() {
-    const images = [lpimg, lpimg2, bg];
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const prevSlide = () => {
-        setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-    };
-
-    const nextSlide = () => {
-        setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    };
-
+import i1 from "../shared/i1.png"
+import i2 from "../shared/i2.png"
+import i3 from "../shared/i3.png"
+import i4 from "../shared/i4.png"
+export default function Inovation() {
     return (
-        <div className="relative w-full min-h-screen flex flex-col items-center justify-center text-black">
-            {/* Hero Background */}
-            <div
-                className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: `url(${bg})` }}
-            ></div>
+        <>
+            <div className=" w-10/12 mx-auto pt-20 PY-8">
+                <h4 className="font-[poppins] text-2xl md:text-6xl font-extrabold text-[#444444]">
+                    Creating Excellence Through Collaboration AND<br />
+                    INOVATION.
+                </h4>
+                <hr className="my-6 border-t-2 border-[#333333] mt-15" />
+            </div>
 
 
-            <section className="relative z-10 w-full flex flex-col px-6 md:px-20 py-16 gap-20">
 
-                {/* Top Hero Text */}
-                <div className="text-center md:text-left max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                        Creating Excellence Through Collaboration and Innovation.
-                    </h1>
-                    <div className="w-24 h-1 bg-black mt-4"></div>
-                </div>
-
-                {/* First Feature - Faysal Ahmmed */}
-                <div className="flex flex-col md:flex-row items-center gap-10">
-                    {/* Text Left */}
-
-
-                    {/* Image Right */}
-                    <div className="flex-1 flex justify-center">
-                        <img
-                            src={lpimg2}
-                            alt="Faysal Ahmmed"
-                            className="w-[300px] md:w-[450px] h-auto object-cover rounded-2xl shadow-lg"
-                        />
-                    </div>
-                    <div className="flex-1 text-left">
-                        <h2 className="text-3xl md:text-5xl font-semibold leading-tight">
-                            Faysal Ahmmed
-                        </h2>
-                        <div className="w-24 h-[3px] bg-gray-800 mt-3 mb-4"></div>
-                        <p className="text-gray-600 text-lg leading-relaxed">
-                            A software engineer with excellent skills and academic scores.
-                            Very dedicated person in AI, deep learning along with research and Backend development.
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-10/12 mx-auto pb-10">
+                {/* Card 1 */}
+                <div className="card bg-base-100 w-full max-w-sm mx-auto ">
+                    <figure>
+                        <img src={i1} alt="Digital Transformation Strategy" className="w-full h-78 object-cover rounded-t-lg" />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title text-lg md:text-xl">Digital Transformation Strategy</h2>
+                        <p className="text-sm md:text-base">
+                            Helping businesses modernize operations through tailored digital adoption plans—enhancing efficiency, reducing costs, and boosting productivity.
                         </p>
-                        <button className="mt-6 px-6 py-3 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-all duration-300">
-                            Learn More →
-                        </button>
+                        <div className="card-actions justify-start mt-2">
+                            <button className="btn btn-primary btn-sm md:btn-md">Learn More</button>
+                        </div>
                     </div>
                 </div>
 
-                {/* Second Feature - Slideshow / Cloud Migration */}
-                <div className="flex flex-col md:flex-row items-center gap-10">
-                    {/* Image Left */}
-                    <div className="flex-1 flex justify-center md:order-1 order-2">
-                        <img
-                            src={images[currentIndex]}
-                            alt="Cloud Migration Slide"
-                            className="w-[100px] md:w-[250px] lg:w-[450px] h-auto object-cover rounded-2xl shadow-lg transition-all duration-700 ease-in-out"
-                        />
-                    </div>
-
-                    {/* Text Right */}
-                    <div className="flex-1 text-left md:order-2 order-1">
-                        <h2 className="text-3xl md:text-5xl font-semibold leading-tight">
-                            Cloud Migration
-                        </h2>
-                        <div className="w-24 h-[3px] bg-gray-800 mt-3 mb-4"></div>
-                        <p className="text-gray-600 text-lg leading-relaxed">
-                            Move legacy infrastructure to cloud for scalability and reliability.
+                {/* Card 2 */}
+                <div className="card bg-base-100 w-full max-w-sm mx-auto ">
+                    <figure>
+                        <img src={i2} alt="Infrastructure" className="w-full h-78 object-cover rounded-t-lg" />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title text-lg md:text-xl">Infrastructure</h2>
+                        <p className="text-sm md:text-base">
+                            Providing expert advice on building scalable, secure infrastructure—covering network setup, server architecture, data protection, and cybersecurity audits.
                         </p>
-                        <button className="mt-6 px-6 py-3 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-all duration-300">
-                            Learn More →
-                        </button>
+                        <div className="card-actions justify-start mt-2">
+                            <button className="btn btn-primary btn-sm md:btn-md">Learn More</button>
+                        </div>
                     </div>
-
-                    {/* Slideshow Arrows */}
-                    <button
-                        onClick={prevSlide}
-                        className="absolute left-5 top-1/2 transform -translate-y-1/2 text-3xl bg-black/50 text-white p-2 rounded-full hover:bg-black transition-all duration-300"
-                    >
-                        ‹
-                    </button>
-                    <button
-                        onClick={nextSlide}
-                        className="absolute right-5 top-1/2 transform -translate-y-1/2 text-3xl bg-black/50 text-white p-2 rounded-full hover:bg-black transition-all duration-300"
-                    >
-                        ›
-                    </button>
                 </div>
 
-            </section>
-        </div>
+                {/* Card 3 */}
+                <div className="card bg-base-100 w-full max-w-sm mx-auto ">
+                    <figure>
+                        <img src={i3} alt="Startup & Innovation Coaching" className="w-full h-78 object-cover rounded-t-lg" />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title text-lg md:text-xl">Startup & Innovation Coaching</h2>
+                        <p className="text-sm md:text-base">
+                            Guiding early-stage founders with business modeling, product-market fit, branding, team building, and tech stack decisions.
+                        </p>
+                        <div className="card-actions justify-start mt-2">
+                            <button className="btn btn-primary btn-sm md:btn-md">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="card bg-base-100 w-full max-w-sm mx-auto">
+                    <figure>
+                        <img src={i4} alt="EdTech & Learning Program Design" className="w-full h-78 object-cover rounded-t-lg" />
+                    </figure>
+                    <div className="card-body">
+                     
+                        <div className="card-actions justify-start mt-2">
+                            <button className="">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </>
     );
 }
