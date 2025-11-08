@@ -1,60 +1,81 @@
+
+
 export default function Blog() {
+
     return (
-        <div className="flex flex-col md:flex-row items-start gap-10 px-10">
+        <div className="flex flex-col md:flex-row items-start gap-10 px-40 py-20">
             {/* Left Column */}
             <div className="flex-1 flex flex-col items-center md:items-start">
                 {/* Heading */}
-                <h1 className="text-6xl md:text-8xl font-bold text-center md:text-left mb-2">
+                <h1 className="text-4xl md:text-6xl font-bold  md:text-left mb-8">
                     leadership roles.
                 </h1>
 
                 {/* Underline */}
-                <div className="w-4/5 md:w-full h-1 bg-black mb-6"></div>
+                <div className="w-[213%] h-1 bg-black mb-8"></div>
 
                 {/* Paragraph */}
                 <p className="text-lg md:text-xl text-left max-w-2xl leading-relaxed">
-                    I've worked with companies and clients, both in agency settings. I enjoy collaborating with clients who appreciate the importance of good design.
+                    I've worked with companies and clients,<br />
+                    both in agency settings. I enjoy<br />
+                    collaborating with clients who appreciate<br />
+                    the importance of good design.
                 </p>
             </div>
 
             {/* Right Column - Career Timeline */}
-            <div className="flex-1 text-left space-y-6 text-lg md:text-xl">
-                <div className="pb-2 border-b border-gray-400">
-                    <strong>Goinnovior Limited</strong><br />
-                    Founder & Managing Director<br />
-                    2016-Present
+
+            {/* Leadership items */}
+            <div className="w-[50%] space-y-8 text-lg md:text-xl">
+
+                <div className="pb-10 mt-40 border-b-2 border-gray-200 flex justify-between items-center">
+                    <strong>Goinnovior Limited</strong>
+                    <span>Founder & Managing Director</span>
+                    <span>2016-Present</span>
                 </div>
 
-                <div className="pb-2 border-b border-gray-400">
-                    <strong>360D Soul Limited</strong><br />
-                    Founder & Managing Director<br />
-                    2023-Present
+                <div className="pb-10 border-b-2 border-gray-200 flex justify-between items-center">
+                    <strong>360D Soul Limited</strong>
+                    <span>Founder & Managing Director</span>
+                    <span>2023-Present</span>
                 </div>
 
-                <div className="pb-2 border-b border-gray-400">
-                    <strong>CodeInnovior</strong><br />
-                    Founder & Managing Director<br />
-                    2020-Present
+                <div className="pb-10 border-b-2 border-gray-200 flex justify-between items-center">
+                    <strong>CodeInnovior</strong>
+                    <span>Founder & Managing, Director</span>
+                    <span>2020-Present</span>
                 </div>
 
-                <div className="pb-2 border-b border-gray-400">
-                    <strong>Skylark Soft Limited</strong><br />
-                    Head of Businesses<br />
-                    2022-2024
+                <div className="pb-10 border-b-2 border-gray-200 flex justify-between items-center">
+                    <strong>Skylark Soft Limited</strong>
+                    <span>Head of Businesses</span>
+                    <span>2022-2024</span>
                 </div>
 
-                <div className="pb-2 border-b border-gray-400">
-                    <strong>Impress Group</strong><br />
-                    Head of Information Technology Operations<br />
-                    2018-2022
+                <div className="pb-10 border-b-2 border-gray-200 flex justify-between items-center">
+                    <strong>Impress Group</strong>
+                    <span>Head of Information Technology Operations</span>
+                    <span>2018-2022</span>
                 </div>
 
-                <div className="pb-2 border-b border-gray-400">
-                    <strong>Next IT Ltd.</strong><br />
-                    Founder & Managing Director<br />
-                    2016-2018
+                <div className="pb-10 border-b-2 border-gray-200 flex justify-between items-center">
+                    <strong>Next IT Ltd.</strong>
+                    <span>Founder & Managing Director</span>
+                    <span>2016-2018</span>
                 </div>
+                {/* Leadership Items Section */}
+                <div className="w-full space-y-6 text-lg md:text-xl">
+
+                    {/* ... all your leadership items ... */}
+
+                </div>
+
+                {/* Underline Section */}
+                <div className="w-[250%] h-1 bg-black mt-40 -ml-210"></div>
+
             </div>
+
         </div>
+
     );
 }

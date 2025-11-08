@@ -38,18 +38,19 @@ export default function Navbar() {
 
                 {/* Left Section */}
                 <div className="relative flex flex-col justify-center w-full md:w-1/4 text-center md:text-left">
+                
                     <h1 className="text-[6rem] md:text-[8rem] font-black leading-none tracking-tight absolute top-[-450%] text-black">
                         KAHAFIL
                     </h1>
-                    <h2 className="text-4xl font-bold text-black mt-4 absoulate top-[-5%]">2K25</h2>
+                    <h2 className="text-4xl font-bold text-black mt-4 absoulate top-[-20px]">2K25</h2>
 
                     {/* PORTFOLIO Line (Rotated Text) */}
-                    <p className="rotate-[-90deg] origin-left text-black text-base tracking-[0.5em] absolute left-[4px] bottom-[-120px]">
-                        /PORTFOLIO----------
+                    <p className="rotate-[-90deg] origin-left text-black text-base tracking-[0.5em] absolute left-[4px] bottom-[-260px]">
+                        /PORTFOLIO-----
                     </p>
 
                     {/* SCROLL DOWN — Fixed at Bottom of Left Section */}
-                    <div className="absolute bottom-[-480%] left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 flex justify-center md:justify-start items-center gap-3 text-sm text-black ">
+                    <div className="absolute bottom-[-510%] left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 flex justify-center md:justify-start items-center gap-3 text-sm text-black ">
                         <p>SCROLL DOWN</p>
                         <span className="animate-bounce text-xl">↓</span>
                     </div>
@@ -60,7 +61,7 @@ export default function Navbar() {
                     <img
                         src={img}
                         alt="Kahafil Sir"
-                        className="w-[100%] md:w-[950px] mx-w[950px] object-cover h-auto object-contain relative z-20 filter grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out"
+                        className="w-[100%] md:w-[950px] mx-w[950px] object-cover h-auto object-contain relative z-20 filter grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 "
                     />
 
                     {/* Arrow Label */}
@@ -68,7 +69,7 @@ export default function Navbar() {
                         <img
                             src={arro}
                             alt="Arrow"
-                            className="w-[70px] md:w-[80px] h-[50px] md:h-[60px] object-contain absolute top-[50%] left-[130%] "
+                            className="w-[80px] md:w-[80px] h-[100px] md:h-[60px] object-contain absolute top-[50%] left-[140%] "
                         />
                         <p className="text-sm tracking-[0.3em] whitespace-nowrap text-black">IT CONSULTANT</p>
                     </div>
